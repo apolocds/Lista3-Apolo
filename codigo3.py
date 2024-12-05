@@ -8,7 +8,7 @@ fatura = float(input("Digite o valor da fatura: "))
 
 despesas = contas_basicas + fatura
 
-# Loop para adicionar despesas
+# loop para adicionar despesas
 while True:
     print("\nDeseja adicionar uma nova despesa? \n[1] Sim\n[2] Não")
     opcao = input("Escolha uma opção: ").strip()
@@ -16,7 +16,7 @@ while True:
     if opcao == "1":
         nome_despesa = input("Digite o nome da despesa: ")
         valor_despesa = float(input(f"Digite o valor da despesa de {nome_despesa}: "))
-        despesas += valor_despesa  # Adiciona a nova despesa ao total
+        despesas += valor_despesa  # adiciona a nova despesa ao total
     elif opcao == "2":
         break
     else:
